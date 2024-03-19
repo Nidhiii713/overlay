@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<style>
+.real-box{
+height: 300px;
+width: 250px;
+background-color: blue;
+position: relative;
+margin: 200px 400px;
+ 
+}
+
+.overlay{
+position: absolute;
+bottom: 0;
+top: 0;
+left: 100;
+right: 100%;
+background-color: #008CBA;
+overflow: hidden;
+width:0 ;
+height: 100%;
+transition: .5s ease;
+
+} 
+.overlay1{
+    background-color: rgb(236, 157, 157);
+    position: absolute;
+    left: 100%;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition:all .5s ease;
+}
+.overlay2{
+    background-color: rgb(109, 83, 195);
+    position: absolute;
+    top: 100%;
+    bottom:0;
+    height: 0;
+    width: 100%; 
+    transition: height .5s ease;
+}
+
+.overlay3{
+    background-color: rgb(237, 72, 146);
+    position: absolute;
+    top: 100;
+    bottom:100%;
+    height: 0;
+    width: 100%; 
+    transition: height .5s ease;
+}
+p{
+padding: 8px;
+}
+
+.real-box:hover .overlay{
+width: 100%;
+}
+.real-box:hover .overlay1{ width: 100%;}
+.real-box:hover .overlay2{  height: 100%;}
+.real-box:hover .overlay3{  height: 100%;}
+</style>
+<body>
+<div class="real-box">
+
+<div class="overlay">
+
+</div>
+
+<div class="overlay1">
+</div>
+
+<div class="overlay2">
+</div>
+
+<div class="overlay3">
+</div>
+
+</div>
+</body>
+</html>
+  
+  
